@@ -14,9 +14,6 @@ import {
 import { GoTrash } from 'react-icons/go';
 
 function Table({ data, setData }) {
-
-	let newData = [];
-
 	const handleInputChange = (event, key, index) => {
 		const value = event.target.value;
 		setData((prevData) => {
