@@ -18,12 +18,12 @@ const fetchData = async (url) => {
 const filterData = async (url) => {
 	const dataFetched = await fetchData(url);
 
-	const filterByType = (arr, type) => {
-		return arr.filter((item) => typeof item === type);
+	const filterByType = (array, type) => {
+		return array.filter((item) => typeof item === type);
 	};
 
-	const sortByLocale = (arr) => {
-		return arr.sort((a, b) =>
+	const sortByLocale = (array) => {
+		return array.sort((a, b) =>
 			a.localeCompare(b, 'fr', { sensitivity: 'base' })
 		);
 	};
